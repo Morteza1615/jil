@@ -4,7 +4,7 @@
 <pre>
 توکن,ایدی,ایدی گروه در فایل کانفیگ وارد شود
 
-`git clone https://github.com/Morteza1615/jil.git`
+`git clone https://github.com/TeleCleverGuy/jil.git`
 
 بسته های زیر نصب شوند
 
