@@ -1,4 +1,4 @@
-﻿function if_admin(msg)
+function if_admin(msg)
 	admin_name = "ادمین"
 	is_admin = false
 	admintab = admins(msg.chat.id)
@@ -77,7 +77,7 @@ function manage_group(msg)
 			return send_msg(msg.chat.id, msg.from.id, false)
 		end
 	elseif msg.text:lower() == "/about" or msg.text:lower() == "about" then
-		about_txt = "*Jil Robot* v"..bot_version.."\n`رباتی منحصر به فرد و رایگان برای مدیران کانال ها و گروه ها همچنین افرادی که میخواهند خاص و متفاوت باشند.\nامکانات ربات:`\n"..ghabeliyat
+		about_txt = "*Contributive Robot* v"..bot_version.."\n`رباتی منحصر به فرد و رایگان برای مدیران کانال ها و گروه ها همچنین افرادی که میخواهند خاص و متفاوت باشند.\nامکانات ربات:`\n"..ghabeliyat
 			.."\n\n` طراحی و ساخت توسط مرتضی  به سفارش کانال کمک کننده`"
 		about_key = {{{text = "کانال Contributive" , url = "https://telegram.me/Contributive"},{text = "پشتیبان ربات" , url = "https://telegram.me/morteza4718"}},{{text = "سازنده ربات" , url = "https://telegram.me/pmresan_m_bot"},{text = "سفارش ربات" , url = "https://telegram.me/pmresan_M_bot"}}}
 		return send_inline(msg.chat.id, about_txt, about_key)
@@ -292,7 +292,7 @@ function run(msg)
 	start_txt = "به ربات "..bot.first_name..' خوش آمدید\n\n`در این ربات امکانات زیر را به صورت رایگان خواهید داشت:`\n'..ghabeliyat
 	..'\n\n`توجه کنید!\nاین ربات ضد اسپم بوده و هرگونه اسپم و فلود را تشخیص میدهد و در صورتی که اسپم کنید از ربات بلاک میشوید و دیگر ربات به شما پاسخ نخواهد داد. دقت کنید که آنبلاک کردن رایگان نخواهد بود.`'
 	keyboard = {{"نگهبان گروه و ضد تبلیغ"},{"ارسال کیبرد شیشه ای به کانال"},{"درج زیرنویس در عکس، فیلم، گیف و فایل"},{"ایجاد متن با فونتهای مختلف و هایپر لینک"},{"راهنما","درباره ما","تبلیغ و تبادل"}}
-	add_key = {{{text = "افزودن ربات به گروه" , url = "https://telegram.me/jilbot?startgroup=start"}}}
+	add_key = {{{text = "افزودن ربات به گروه" , url = "https://telegram.me/Contributivebot?startgroup=start"}}}
 	blocks = load_data("blocks.json")
 	users = load_data("users.json")
 	groups = load_data("groups.json")
@@ -338,7 +338,7 @@ function run(msg)
 			.."`شناسه: `"..msg.from.id.."\n\n"
 		return send_msg(msg.chat.id, info, true)
 	elseif msg.text == "ارتباط با ما" or msg.text == "درباره ما" or msg.text:lower() == "about" or msg.text:lower() == "/about" then
-		about_txt = "*Jil Robot* v"..bot_version.."\n`رباتی منحصر به فرد و رایگان برای مدیران کانال ها و گروه ها همچنین افرادی که میخواهند خاص و متفاوت باشند.\nامکانات ربات:`\n"..ghabeliyat
+		about_txt = "*Contributive Robot* v"..bot_version.."\n`رباتی منحصر به فرد و رایگان برای مدیران کانال ها و گروه ها همچنین افرادی که میخواهند خاص و متفاوت باشند.\nامکانات ربات:`\n"..ghabeliyat
 			.."\n\n`طراحی و ساخت توسط مرتضی به سفارش کانال کمک کننده`"
 		about_key = {{{text = "کانال Contributive" , url = "https://telegram.me/Contributive"}},{{text = "ادمین و پشتیبان ربات" , url = "https://telegram.me/morteza4718"}},{{text = "کانال سازنده ربات" , url = "https://telegram.me/Contributive"}},{{text = "سفارش ربات" , url = "https://telegram.me/حئقثسشد_ئ_ذخف"}}}
 		return send_inline(msg.from.id, about_txt, about_key)
